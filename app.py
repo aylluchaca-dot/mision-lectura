@@ -399,8 +399,7 @@ elif role == "🎒 Modo Aventura (Estudiante)":
                         with st.expander("💡 Pistas para vincular conceptos con flechas"):
                             for h in l3_payload.get('hints', []):
                                 st.markdown(f"• {h['text']}")
-                            st.markdown(f"**Estructura sugerida:**
-`{l3_payload.get('example_structure', '')}`")
+                            st.markdown(f"**Estructura sugerida:** {l3_payload.get('example_structure', '')}")
 
                         student_diagram_text = st.text_area(
                             "Representa aquí tu esquema conceptual (o describe la relación entre nodos):",
